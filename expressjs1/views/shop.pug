@@ -1,0 +1,20 @@
+//- the below code is equivalent to normal html5 code pug will convert to normal html at the end.
+extends layouts/main-layout.pug
+
+block content 
+  main
+    .grid
+      if prods.length>0
+        each product in prods
+          article.card.product-item
+            header.card__header
+              h1.product__title #{product.title}
+            div.card__image
+              img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ganesha_BhaktiFestWest_20170910.jpg/220px-Ganesha_BhaktiFestWest_20170910.jpg", alt="A murti")  
+            div.card__content
+              h2.product__price $19.99
+                p.product__description A very beautiful murti of God Ganesh! 
+            .card__actions
+              button.btn Add to Cart
+      else
+        h1 No Products Found!

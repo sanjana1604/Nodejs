@@ -1,0 +1,37 @@
+<%- include('../includes/head.ejs') %>
+<!-- <link rel="stylesheet" href="/css/registration.css"> -->
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top-nav fixed-top">
+  <div class="container">
+      <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="fas fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="campaign.html">Campaign</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+         </ul>
+      </div>
+  </div>
+</nav>
+<body>
+<%= user.u_name %>
+
+<%- include('../includes/footer.ejs') %>
+<%- include('../includes/end.ejs') %>

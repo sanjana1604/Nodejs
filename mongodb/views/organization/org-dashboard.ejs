@@ -1,0 +1,163 @@
+<%- include('../includes/head.ejs') %>
+<!-- <link rel="stylesheet" href="/css/registration.css"> -->
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top-nav fixed-top">
+  <div class="container">
+      <a class="navbar-brand" href="../index.html">
+      <img src="../images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="fas fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="<%= path === '/org-login/org-dashboard' ? 'nav-link active' : 'nav-link' %>" href="/org-login/org-dashboard" >Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="user-about.html">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="user-campaign.html">Campaign</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="user-services.html">Services</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/org-login/campaign/" method="get">Campaign</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="/org-login/<%=organization._id%>">Profile</a>
+           </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Sign-out</a>
+           </li>
+         </ul>
+      </div>
+  </div>
+</nav>
+
+<header class="slider-main">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+           <!-- Slide One - Set the background image for this slide in the line below -->
+           <div class="carousel-item active" style="background-image: url('../images/home-page1.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                 <h3>Welcome to A Step Ahead</h3>
+                 <p>A Step Towards Environment Sustainability</p>
+              </div>
+           </div>
+           <!-- Slide Two - Set the background image for this slide in the line below -->
+           <div class="carousel-item" style="background-image: url('../images/home-page2.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                 <p>A Step Towards Waste Management</p>
+              </div>
+           </div>
+           <!-- Slide Three - Set the background image for this slide in the line below -->
+           <div class="carousel-item" style="background-image: url('../images/home-page3.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                 <p>A Step Towards Spreading Awareness</p>
+              </div>
+           </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+<!-- Page Content -->
+<div class="container">
+    <div class="services-bar">
+        
+    <!-- About Section -->
+    <div class="about-main">
+        <div class="row">
+           <div class="col-lg-6">
+              <h2>Welcome to A Step Ahead</h2>
+              <p>We are an organization that works for the betterment of the environment. We believe in working 
+                 creatively to make this world greener and more peaceful.
+              </p>
+              <h5>Our smart approach</h5>
+              <ul>
+                 <li>We conduct campaigns to spread awareness among people.</li>
+                 <li>We circulate vehicle to collect wastes from home.</li>
+                 <li>We collaborate with municipal corporations to provide healthy surroundings to common man.</li>
+                 <li>We promote campaigns of other organizations.</li>
+              </ul>
+              <p>We confront the things that threaten our environment. We take action based on conscience. This means we are accountable for our actions and take personal responsibility.  </p>
+           </div>
+           <div class="col-lg-6">
+              <img class="img-fluid rounded" src="../images/about-img2.jpg" alt="" />
+           </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <br>
+    <!-- Services Section -->
+    <h1 class="my-4">Our Best Services </h1>
+    <div class="row">
+     <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+           <h4 class="card-header">Campaigns</h4>
+           <div class="card-img">
+              <img class="img-fluid" src="../images/campaign-homepage.jpg" alt="Best Services" />
+           </div>
+           <div class="card-body">
+              <p class="card-text">We conduct and promote campaigns to spread awareness among people.</p>
+           </div>
+           <div class="card-footer">
+              <a href="user-services.html" class="btn btn-primary">Learn More</a>
+           </div>
+        </div>
+     </div>
+     <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+           <h4 class="card-header">Waste Management</h4>
+           <div class="card-img">
+              <img class="img-fluid" src="../images/services-homepage.jpg" alt="Best Services" />
+           </div>
+           <div class="card-body">
+              <p class="card-text">We send vehicles to collect waste from houses.</p>
+           </div>
+           <div class="card-footer">
+              <a href="user-services.html" class="btn btn-primary">Learn More</a>
+           </div>
+        </div>
+     </div>
+     
+     <!-- /.row -->
+     </div>
+     <br>
+
+    <hr>
+    <!-- Get In Touch Now Section -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+           <h6>Want to be part of our team?</h6>
+           <p>If you are passionate about change and believe in better and greener future, come join us!</p>
+        </div>
+        <div class="col-md-4">
+           <a class="btn btn-lg btn-secondary btn-block" href="#">Get In Touch Now</a>
+        </div>
+    </div>
+</div>
+</main>
+<br>
+<br>
+<%- include('../includes/footer.ejs') %>
+<%- include('../includes/end.ejs') %>

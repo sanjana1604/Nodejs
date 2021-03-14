@@ -1,0 +1,105 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top-nav fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="images/Group 10.2.png" alt="logo" />
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <a class="<%= path === '/' ? 'nav-link active' : 'nav-link' %>" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                 <a class="<%= path === '/about' ? 'nav-link active' : 'nav-link' %>" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="campaign.html">Campaign</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Sign In
+                 </a>
+                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSignin">
+                    <a class="dropdown-item" href="admin/admin-login.html">Admin</a>
+                    <a class="dropdown-item" href="organization/organization-login.html">Organization</a>
+                    <a class="dropdown-item" href="/user-login">User</a>
+                 </div>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Sign Up
+                 </a>
+                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                    <a class="dropdown-item" href="admin/admin-register.html">Admin</a>
+                    <a class="dropdown-item" href="organization/organization-register.html">Organization</a>
+                    <a class="dropdown-item" href="user/user-registration.html">User</a>
+                 </div>
+              </li> -->
+           </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- 
+<div class="backdrop"></div>
+<header class="main-header">
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                </a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="mobile-nav">
+        <ul class="mobile-nav__item-list">
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                    </a>
+                </li>
+            </ul>
+</nav> -->
